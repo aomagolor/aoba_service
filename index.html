@@ -2,22 +2,92 @@
 <html>
     <head>
         <title>アカウント登録</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="new_acount.css">
+        <meta charset = "utf-8">
+        <link rel = "stylesheet" href = "new_acount.css">
     </head>
     <body>
         <h1>アカウントを登録</h1>
-        <form method="post" action="/new_acount.php" enctype="multipart/form-data">
+        <form method = "post" action = "/new_acount.php" enctype = "multipart/form-data">
 
             <div>
-                <label for="name" class = "left">アカウントの名前:</label>
-                <input type="text" id="name" name="name" class = "left">
-                <h4 style="color: red;">*</h4>
+                <label for = "name" class = "left">アカウントの名前:</label>
+                <input type = "text" id = "name" name = "name" class = "left">
+                <h4 class = "required">*</h4>
                 
                 <h5>これはアカウントの名前です。<br>これは後から変更することができます。</h5>
             </div>
             <div>
-                <button type="submit">データを送信する</button>
+                <label for = "mail" class = "left">メールアドレス:</label>
+                <input type = "email" id = "mail" name = "mail" class = "left">
+                <h4 class = "required">*</h4>
+
+                <h5>アカウントの連絡などに使用する、<br>メールアドレスを入力してください。</h5>
+            </div>
+            <div>
+                <label for = "password" class = "left">パスワード:</label>
+                <input type = "password" id = "password" name = "password" class = left>
+                <h4 class = "required">*</h4>
+
+                <h5>これはアカウントのログインに<br>使用するパスワードです。</h5>
+            </div>
+            <div>
+                <label for = "birth_month" class = "left">誕生日 (月):</label>
+                <select id = "birth_month" name = "birth_month" class = "left">
+                    <option value = "1" > 1月</option>
+                    <option value = "2" > 2月</option>
+                    <option value = "3" > 3月</option>
+                    <option value = "4" > 4月</option> 
+                    <option value = "5" > 5月</option> 
+                    <option value = "6" > 6月</option> 
+                    <option value = "7" > 7月</option> 
+                    <option value = "8" > 8月</option> 
+                    <option value = "9" > 9月</option> 
+                    <option value = "10" >10月</option> 
+                    <option value = "11" >11月</option>
+                    <option value = "12" >12月</option>
+                </select>
+                <h4 class = "required">*</h4>
+
+                <label for = "birth_day" class = "left">誕生日 (日):</label>
+                <select id = "birth_day" name="birth_day" class = "left">
+                    <option value = "1" > 1日</option>
+                    <option value = "2" > 2日</option>
+                    <option value = "3" > 3日</option>
+                    <option value = "4" > 4日</option>
+                    <option value = "5" > 5日</option>
+                    <option value = "6" > 6日</option>
+                    <option value = "7" > 7日</option>
+                    <option value = "8" > 8日</option>
+                    <option value = "9" > 9日</option>
+                    <option value = "10" >10日</option>
+                    <option value = "11" >11日</option>
+                    <option value = "12" >12日</option>
+                    <option value = "13" >13日</option>
+                    <option value = "14" >14日</option>
+                    <option value = "15" >15日</option>
+                    <option value = "16" >16日</option>
+                    <option value = "17" >17日</option>
+                    <option value = "18" >18日</option>
+                    <option value = "19" >19日</option>
+                    <option value = "20" >20日</option>
+                    <option value = "21" >21日</option>
+                    <option value = "22" >22日</option>
+                    <option value = "23" >23日</option>
+                    <option value = "24" >24日</option>
+                    <option value = "25" >25日</option>
+                    <option value = "26" >26日</option>
+                    <option value = "27" >27日</option>
+                    <option value = "28" >28日</option>
+                    <option value = "29" >29日</option>
+                    <option value = "30" >30日</option>
+                    <option value = "31" >31日</option>
+                </select>
+                <h4 class = "required">*</h4>
+
+                <h5>これは誕生日に関する処理を<br>するときに使用されます。</h5>
+            </div>
+            <div>
+                <button typ = "submit">データを送信する</button>
             </div>
         </form>
     </body>

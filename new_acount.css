@@ -2,7 +2,15 @@ body {
     font-family: system-ui;
 }
 
+.required {
+    color: red;
+}
+
 .left {
     float: left;
+}
+
+.right {
+    float: right;
 }
     
